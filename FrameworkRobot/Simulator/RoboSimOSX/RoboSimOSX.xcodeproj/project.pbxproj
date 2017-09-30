@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A2C09D0888800EBEB88 /* SDLMain.m */; };
+		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		3B25FAD912C3F6940058724E /* SimAccelerometerModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B25FAD312C3F6940058724E /* SimAccelerometerModule.cpp */; };
+		3B25FADA12C3F6940058724E /* SimGyroModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B25FAD512C3F6940058724E /* SimGyroModule.cpp */; };
+		3B25FADB12C3F6940058724E /* SimPotModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B25FAD712C3F6940058724E /* SimPotModule.cpp */; };
+		3B294DE612ECD1E3000D8E58 /* SimElevatorModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B294DE512ECD1E3000D8E58 /* SimElevatorModule.cpp */; };
+		3B294DE912ECD1E7000D8E58 /* SimArmModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B294DE812ECD1E7000D8E58 /* SimArmModule.cpp */; };
+		3B3FE9D112E7B91200EF0C1B /* AllianceWall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9C212E7B91200EF0C1B /* AllianceWall.cpp */; };
+		3B3FE9D212E7B91200EF0C1B /* GuardRail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9C512E7B91200EF0C1B /* GuardRail.cpp */; };
+		3B3FE9D312E7B91200EF0C1B /* Lane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9C712E7B91200EF0C1B /* Lane.cpp */; };
+		3B3FE9D412E7B91200EF0C1B /* LaneDivider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9C912E7B91200EF0C1B /* LaneDivider.cpp */; };
+		3B3FE9D512E7B91200EF0C1B /* ScoringGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9CB12E7B91200EF0C1B /* ScoringGrid.cpp */; };
+		3B3FE9D612E7B91200EF0C1B /* ScoringZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9CD12E7B91200EF0C1B /* ScoringZone.cpp */; };
+		3B3FE9D712E7B91200EF0C1B /* Tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FE9CF12E7B91200EF0C1B /* Tower.cpp */; };
+		3B59C27712C469EA004DFF5D /* Matrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B59C27512C469EA004DFF5D /* Matrix3x3.cpp */; };
+		3B7AB70212E7735700962B13 /* ConvexPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B7AB6F812E7735700962B13 /* ConvexPolygon.cpp */; };
+		3B7AB70312E7735700962B13 /* ConvexPolyhedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B7AB6FA12E7735700962B13 /* ConvexPolyhedron.cpp */; };
+		3B7AB70412E7735700962B13 /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B7AB6FC12E7735700962B13 /* Edge.cpp */; };
+		3B7AB70512E7735700962B13 /* Prism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B7AB6FE12E7735700962B13 /* Prism.cpp */; };
+		3B87253412D8F5CE0012825F /* TubeRing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B87253312D8F5CE0012825F /* TubeRing.cpp */; };
+		3B9704CA12ED430D00DC10FE /* RobotModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B9704C812ED430D00DC10FE /* RobotModel.cpp */; };
+		3BBD292D12D97C77007A004A /* FieldObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD292C12D97C77007A004A /* FieldObject.cpp */; };
+		3BBFCC2C12E76C220053A1E9 /* Tube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFCC2B12E76C220053A1E9 /* Tube.cpp */; };
+		3BCFC3DA12D8EF8E00E48051 /* TubeSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCFC3D912D8EF8E00E48051 /* TubeSquare.cpp */; };
+		3BCFC3DD12D8EF9600E48051 /* TubeTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCFC3DC12D8EF9600E48051 /* TubeTriangle.cpp */; };
+		4325121B12AF6724003BD3BA /* SimulatedRobotModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4325121912AF6724003BD3BA /* SimulatedRobotModel.cpp */; };
+		43360B9312F497A20093065F /* RobotTuningTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43360B9212F497A20093065F /* RobotTuningTests.cpp */; };
+		4353639A12FCBC8E00F9FB9F /* XBoxDriveController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4353639812FCBC8E00F9FB9F /* XBoxDriveController.cpp */; };
+		437B07B912C3209D001925F7 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 437B07B412C3209D001925F7 /* Vector3.cpp */; };
+		437B07BA12C3209D001925F7 /* StudentProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 437B07B712C3209D001925F7 /* StudentProgram.cpp */; };
+		4391A1D612C1655D00D29119 /* SimulatedField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4391A1D512C1655D00D29119 /* SimulatedField.cpp */; };
+		4394BD1A12FC16D1006A248B /* SimulatedXBoxController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4394BD1912FC16D1006A248B /* SimulatedXBoxController.cpp */; };
+		43ABB26B13036BEF00D9CCB6 /* AcceleratorArcade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43ABB26913036BEF00D9CCB6 /* AcceleratorArcade.cpp */; };
+		43AFFFF812C0C7F000B03CF9 /* SimulatedProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43AFFFF612C0C7F000B03CF9 /* SimulatedProgram.cpp */; };
+		43B18C5C127B850D007DDD3D /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B18C5B127B850D007DDD3D /* SDL_image.framework */; };
+		43B18C5E127B850D007DDD3D /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B18C5D127B850D007DDD3D /* SDL.framework */; };
+		43B18C8C127B851E007DDD3D /* SDL_image.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 43B18C5B127B850D007DDD3D /* SDL_image.framework */; };
+		43B18C8D127B851E007DDD3D /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 43B18C5D127B850D007DDD3D /* SDL.framework */; };
+		43B18CA0127B857A007DDD3D /* RoboSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43B18C9F127B857A007DDD3D /* RoboSim.cpp */; };
+		43B18CDC127B8EF6007DDD3D /* SimulatorWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43B18CDB127B8EF6007DDD3D /* SimulatorWindow.cpp */; };
+		43B18DEA127C1FBF007DDD3D /* SimHardware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43B18DE9127C1FBF007DDD3D /* SimHardware.cpp */; };
+		43B19025127D43FB007DDD3D /* SimulatorController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43B19023127D43FB007DDD3D /* SimulatorController.cpp */; };
+		43B1915E127DD58A007DDD3D /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B1915D127DD58A007DDD3D /* car.png */; };
+		43D1852712C127C90057978F /* SimEncoderModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D1851B12C127C90057978F /* SimEncoderModule.cpp */; };
+		43D1852812C127C90057978F /* SimGearingModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D1851D12C127C90057978F /* SimGearingModule.cpp */; };
+		43D1852912C127C90057978F /* SimModuleBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D1851F12C127C90057978F /* SimModuleBase.cpp */; };
+		43D1852A12C127C90057978F /* SimMotorModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D1852112C127C90057978F /* SimMotorModule.cpp */; };
+		43D1852B12C127C90057978F /* SimRobotBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D1852312C127C90057978F /* SimRobotBody.cpp */; };
+		43D1852C12C127C90057978F /* SimWheelModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43D1852512C127C90057978F /* SimWheelModule.cpp */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				43B18C8C127B851E007DDD3D /* SDL_image.framework in Copy Frameworks into .app bundle */,
+				43B18C8D127B851E007DDD3D /* SDL.framework in Copy Frameworks into .app bundle */,
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002F3A2B09D0888800EBEB88 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = SOURCE_ROOT; };
+		002F3A2C09D0888800EBEB88 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = SOURCE_ROOT; };
+		002F3C0009D093BD00EBEB88 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		002F3C6009D0951E00EBEB88 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* RoboSimOSX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoboSimOSX_Prefix.pch; sourceTree = "<group>"; };
+		3B25FAD312C3F6940058724E /* SimAccelerometerModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimAccelerometerModule.cpp; sourceTree = "<group>"; };
+		3B25FAD412C3F6940058724E /* SimAccelerometerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimAccelerometerModule.h; sourceTree = "<group>"; };
+		3B25FAD512C3F6940058724E /* SimGyroModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimGyroModule.cpp; sourceTree = "<group>"; };
+		3B25FAD612C3F6940058724E /* SimGyroModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimGyroModule.h; sourceTree = "<group>"; };
+		3B25FAD712C3F6940058724E /* SimPotModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimPotModule.cpp; sourceTree = "<group>"; };
+		3B25FAD812C3F6940058724E /* SimPotModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPotModule.h; sourceTree = "<group>"; };
+		3B25FB1B12C3F9770058724E /* FieldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldModel.h; sourceTree = "<group>"; };
+		3B294DE412ECD1E3000D8E58 /* SimElevatorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimElevatorModule.h; sourceTree = "<group>"; };
+		3B294DE512ECD1E3000D8E58 /* SimElevatorModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimElevatorModule.cpp; sourceTree = "<group>"; };
+		3B294DE712ECD1E7000D8E58 /* SimArmModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimArmModule.h; sourceTree = "<group>"; };
+		3B294DE812ECD1E7000D8E58 /* SimArmModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimArmModule.cpp; sourceTree = "<group>"; };
+		3B3FE9C212E7B91200EF0C1B /* AllianceWall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AllianceWall.cpp; sourceTree = "<group>"; };
+		3B3FE9C312E7B91200EF0C1B /* AllianceWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllianceWall.h; sourceTree = "<group>"; };
+		3B3FE9C412E7B91200EF0C1B /* FieldElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldElements.h; sourceTree = "<group>"; };
+		3B3FE9C512E7B91200EF0C1B /* GuardRail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuardRail.cpp; sourceTree = "<group>"; };
+		3B3FE9C612E7B91200EF0C1B /* GuardRail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuardRail.h; sourceTree = "<group>"; };
+		3B3FE9C712E7B91200EF0C1B /* Lane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lane.cpp; sourceTree = "<group>"; };
+		3B3FE9C812E7B91200EF0C1B /* Lane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lane.h; sourceTree = "<group>"; };
+		3B3FE9C912E7B91200EF0C1B /* LaneDivider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LaneDivider.cpp; sourceTree = "<group>"; };
+		3B3FE9CA12E7B91200EF0C1B /* LaneDivider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaneDivider.h; sourceTree = "<group>"; };
+		3B3FE9CB12E7B91200EF0C1B /* ScoringGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoringGrid.cpp; sourceTree = "<group>"; };
+		3B3FE9CC12E7B91200EF0C1B /* ScoringGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoringGrid.h; sourceTree = "<group>"; };
+		3B3FE9CD12E7B91200EF0C1B /* ScoringZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScoringZone.cpp; sourceTree = "<group>"; };
+		3B3FE9CE12E7B91200EF0C1B /* ScoringZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoringZone.h; sourceTree = "<group>"; };
+		3B3FE9CF12E7B91200EF0C1B /* Tower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tower.cpp; sourceTree = "<group>"; };
+		3B3FE9D012E7B91200EF0C1B /* Tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tower.h; sourceTree = "<group>"; };
+		3B59C27512C469EA004DFF5D /* Matrix3x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3x3.cpp; sourceTree = "<group>"; };
+		3B59C27612C469EA004DFF5D /* Matrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3x3.h; sourceTree = "<group>"; };
+		3B64C0DC12EFDDC80056BD7B /* FiniteStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiniteStateMachine.h; sourceTree = "<group>"; };
+		3B64C0DD12EFDDC80056BD7B /* HumanDriveControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanDriveControl.h; sourceTree = "<group>"; };
+		3B7AB6F812E7735700962B13 /* ConvexPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvexPolygon.cpp; sourceTree = "<group>"; };
+		3B7AB6F912E7735700962B13 /* ConvexPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvexPolygon.h; sourceTree = "<group>"; };
+		3B7AB6FA12E7735700962B13 /* ConvexPolyhedron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvexPolyhedron.cpp; sourceTree = "<group>"; };
+		3B7AB6FB12E7735700962B13 /* ConvexPolyhedron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvexPolyhedron.h; sourceTree = "<group>"; };
+		3B7AB6FC12E7735700962B13 /* Edge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
+		3B7AB6FD12E7735700962B13 /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
+		3B7AB6FE12E7735700962B13 /* Prism.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Prism.cpp; sourceTree = "<group>"; };
+		3B7AB6FF12E7735700962B13 /* Prism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prism.h; sourceTree = "<group>"; };
+		3B84307F12D0173100EEA855 /* FieldObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldObject.h; sourceTree = "<group>"; };
+		3B87253212D8F5CE0012825F /* TubeRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeRing.h; sourceTree = "<group>"; };
+		3B87253312D8F5CE0012825F /* TubeRing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TubeRing.cpp; sourceTree = "<group>"; };
+		3B9704C612ED430D00DC10FE /* NumericalVector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NumericalVector.hpp; sourceTree = "<group>"; };
+		3B9704C712ED430D00DC10FE /* PolyFunction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PolyFunction.hpp; sourceTree = "<group>"; };
+		3B9704C812ED430D00DC10FE /* RobotModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RobotModel.cpp; sourceTree = "<group>"; };
+		3BB59E7012D7ADD800A8A5CD /* SimModuleIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimModuleIncludes.h; sourceTree = "<group>"; };
+		3BBD292C12D97C77007A004A /* FieldObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FieldObject.cpp; sourceTree = "<group>"; };
+		3BBFCC2A12E76C220053A1E9 /* Tube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tube.h; sourceTree = "<group>"; };
+		3BBFCC2B12E76C220053A1E9 /* Tube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tube.cpp; sourceTree = "<group>"; };
+		3BCFC3D812D8EF8E00E48051 /* TubeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeSquare.h; sourceTree = "<group>"; };
+		3BCFC3D912D8EF8E00E48051 /* TubeSquare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TubeSquare.cpp; sourceTree = "<group>"; };
+		3BCFC3DB12D8EF9600E48051 /* TubeTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubeTriangle.h; sourceTree = "<group>"; };
+		3BCFC3DC12D8EF9600E48051 /* TubeTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TubeTriangle.cpp; sourceTree = "<group>"; };
+		4315C9891306451E00F5ACC4 /* LinearizeMotorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearizeMotorTest.h; sourceTree = "<group>"; };
+		4325121912AF6724003BD3BA /* SimulatedRobotModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulatedRobotModel.cpp; sourceTree = "<group>"; };
+		4325121A12AF6724003BD3BA /* SimulatedRobotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatedRobotModel.h; sourceTree = "<group>"; };
+		43360B9112F497A20093065F /* RobotTuningTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotTuningTests.h; sourceTree = "<group>"; };
+		43360B9212F497A20093065F /* RobotTuningTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RobotTuningTests.cpp; sourceTree = "<group>"; };
+		43360B9412F498C00093065F /* PID.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PID.hpp; sourceTree = "<group>"; };
+		4353639812FCBC8E00F9FB9F /* XBoxDriveController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBoxDriveController.cpp; sourceTree = "<group>"; };
+		4353639912FCBC8E00F9FB9F /* XBoxDriveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBoxDriveController.h; sourceTree = "<group>"; };
+		437B07B112C3209D001925F7 /* CommonIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonIncludes.h; sourceTree = "<group>"; };
+		437B07B212C3209D001925F7 /* RobotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotModel.h; sourceTree = "<group>"; };
+		437B07B312C3209D001925F7 /* RobotProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotProgram.h; sourceTree = "<group>"; };
+		437B07B412C3209D001925F7 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		437B07B512C3209D001925F7 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		437B07B712C3209D001925F7 /* StudentProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StudentProgram.cpp; sourceTree = "<group>"; };
+		437B07B812C3209D001925F7 /* StudentProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentProgram.h; sourceTree = "<group>"; };
+		4391A1D412C1655D00D29119 /* SimulatedField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatedField.h; sourceTree = "<group>"; };
+		4391A1D512C1655D00D29119 /* SimulatedField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulatedField.cpp; sourceTree = "<group>"; };
+		4394BD1812FC16D1006A248B /* SimulatedXBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatedXBoxController.h; sourceTree = "<group>"; };
+		4394BD1912FC16D1006A248B /* SimulatedXBoxController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulatedXBoxController.cpp; sourceTree = "<group>"; };
+		43ABB26913036BEF00D9CCB6 /* AcceleratorArcade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AcceleratorArcade.cpp; sourceTree = "<group>"; };
+		43ABB26A13036BEF00D9CCB6 /* AcceleratorArcade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceleratorArcade.h; sourceTree = "<group>"; };
+		43AEFDB81303E467001D3BD1 /* Keaton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Keaton.cpp; sourceTree = "<group>"; };
+		43AEFDB91303E467001D3BD1 /* Keaton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keaton.h; sourceTree = "<group>"; };
+		43AEFDBA1303E467001D3BD1 /* LinearizedMotorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearizedMotorResponse.h; sourceTree = "<group>"; };
+		43AEFDBB1303E467001D3BD1 /* MyRobot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyRobot.cpp; sourceTree = "<group>"; };
+		43AEFDBD1303E467001D3BD1 /* XBoxControllerCRIODriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBoxControllerCRIODriver.cpp; sourceTree = "<group>"; };
+		43AEFDBE1303E467001D3BD1 /* XBoxControllerCRIODriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBoxControllerCRIODriver.h; sourceTree = "<group>"; };
+		43AFFFF612C0C7F000B03CF9 /* SimulatedProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulatedProgram.cpp; sourceTree = "<group>"; };
+		43AFFFF712C0C7F000B03CF9 /* SimulatedProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatedProgram.h; sourceTree = "<group>"; };
+		43B18C5B127B850D007DDD3D /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = Frameworks/SDL_image.framework; sourceTree = "<group>"; };
+		43B18C5D127B850D007DDD3D /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = Frameworks/SDL.framework; sourceTree = "<group>"; };
+		43B18C9F127B857A007DDD3D /* RoboSim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RoboSim.cpp; path = ../RoboSim.cpp; sourceTree = SOURCE_ROOT; };
+		43B18CDA127B8EF6007DDD3D /* SimulatorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimulatorWindow.h; path = ../SimGUI/SimulatorWindow.h; sourceTree = SOURCE_ROOT; };
+		43B18CDB127B8EF6007DDD3D /* SimulatorWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = SimulatorWindow.cpp; path = ../SimGUI/SimulatorWindow.cpp; sourceTree = SOURCE_ROOT; };
+		43B18DE8127C1FBF007DDD3D /* SimHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimHardware.h; path = ../SimGUI/SimHardware.h; sourceTree = SOURCE_ROOT; };
+		43B18DE9127C1FBF007DDD3D /* SimHardware.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimHardware.cpp; path = ../SimGUI/SimHardware.cpp; sourceTree = SOURCE_ROOT; };
+		43B19023127D43FB007DDD3D /* SimulatorController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimulatorController.cpp; path = ../SimGUI/SimulatorController.cpp; sourceTree = SOURCE_ROOT; };
+		43B19024127D43FB007DDD3D /* SimulatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimulatorController.h; path = ../SimGUI/SimulatorController.h; sourceTree = SOURCE_ROOT; };
+		43B1915D127DD58A007DDD3D /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car.png; path = ../bin/Resources/car.png; sourceTree = SOURCE_ROOT; };
+		43D1851912C127C90057978F /* DistanceVectorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceVectorInterface.h; sourceTree = "<group>"; };
+		43D1851A12C127C90057978F /* RotationInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationInterface.h; sourceTree = "<group>"; };
+		43D1851B12C127C90057978F /* SimEncoderModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimEncoderModule.cpp; sourceTree = "<group>"; };
+		43D1851C12C127C90057978F /* SimEncoderModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimEncoderModule.h; sourceTree = "<group>"; };
+		43D1851D12C127C90057978F /* SimGearingModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimGearingModule.cpp; sourceTree = "<group>"; };
+		43D1851E12C127C90057978F /* SimGearingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimGearingModule.h; sourceTree = "<group>"; };
+		43D1851F12C127C90057978F /* SimModuleBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimModuleBase.cpp; sourceTree = "<group>"; };
+		43D1852012C127C90057978F /* SimModuleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimModuleBase.h; sourceTree = "<group>"; };
+		43D1852112C127C90057978F /* SimMotorModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimMotorModule.cpp; sourceTree = "<group>"; };
+		43D1852212C127C90057978F /* SimMotorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimMotorModule.h; sourceTree = "<group>"; };
+		43D1852312C127C90057978F /* SimRobotBody.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimRobotBody.cpp; sourceTree = "<group>"; };
+		43D1852412C127C90057978F /* SimRobotBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimRobotBody.h; sourceTree = "<group>"; };
+		43D1852512C127C90057978F /* SimWheelModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimWheelModule.cpp; sourceTree = "<group>"; };
+		43D1852612C127C90057978F /* SimWheelModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimWheelModule.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* RoboSimOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoboSimOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */,
+				43B18C5C127B850D007DDD3D /* SDL_image.framework in Frameworks */,
+				43B18C5E127B850D007DDD3D /* SDL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				002F3A2B09D0888800EBEB88 /* SDLMain.h */,
+				002F3A2C09D0888800EBEB88 /* SDLMain.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002F3C6009D0951E00EBEB88 /* GLUT.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				002F3C0009D093BD00EBEB88 /* OpenGL.framework */,
+				43B18C5B127B850D007DDD3D /* SDL_image.framework */,
+				43B18C5D127B850D007DDD3D /* SDL.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* RoboSimOSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* RoboSimOSX */ = {
+			isa = PBXGroup;
+			children = (
+				43AEFDB51303E467001D3BD1 /* Keaton */,
+				3B842E4712CF2FB000EEA855 /* FieldObject */,
+				4325121812AF6724003BD3BA /* SimulatedRobot */,
+				437B07B612C3209D001925F7 /* StudentRobotProgram */,
+				437B07B012C3209D001925F7 /* Shared */,
+				43B18E80127D221E007DDD3D /* SimGUI */,
+				29B97315FDCFA39411CA2CEA /* Main */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = RoboSimOSX;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				43B18C9F127B857A007DDD3D /* RoboSim.cpp */,
+				32CA4F630368D1EE00C91783 /* RoboSimOSX_Prefix.pch */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43B1915D127DD58A007DDD3D /* car.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B7AB6E212E772A700962B13 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3B7AB6F912E7735700962B13 /* ConvexPolygon.h */,
+				3B7AB6F812E7735700962B13 /* ConvexPolygon.cpp */,
+				3B7AB6FB12E7735700962B13 /* ConvexPolyhedron.h */,
+				3B7AB6FA12E7735700962B13 /* ConvexPolyhedron.cpp */,
+				3B7AB6FD12E7735700962B13 /* Edge.h */,
+				3B7AB6FC12E7735700962B13 /* Edge.cpp */,
+				3B7AB6FF12E7735700962B13 /* Prism.h */,
+				3B7AB6FE12E7735700962B13 /* Prism.cpp */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3B842E4712CF2FB000EEA855 /* FieldObject */ = {
+			isa = PBXGroup;
+			children = (
+				3B7AB6E212E772A700962B13 /* Components */,
+				3BDA1B2912E61B3E00D7FBD1 /* FieldElements */,
+				3B84307F12D0173100EEA855 /* FieldObject.h */,
+				3BBD292C12D97C77007A004A /* FieldObject.cpp */,
+			);
+			name = FieldObject;
+			path = ../FieldObject;
+			sourceTree = SOURCE_ROOT;
+		};
+		3BCFC3BF12D8EE8F00E48051 /* Tubes */ = {
+			isa = PBXGroup;
+			children = (
+				3BBFCC2A12E76C220053A1E9 /* Tube.h */,
+				3BBFCC2B12E76C220053A1E9 /* Tube.cpp */,
+				3B87253212D8F5CE0012825F /* TubeRing.h */,
+				3B87253312D8F5CE0012825F /* TubeRing.cpp */,
+				3BCFC3D812D8EF8E00E48051 /* TubeSquare.h */,
+				3BCFC3D912D8EF8E00E48051 /* TubeSquare.cpp */,
+				3BCFC3DB12D8EF9600E48051 /* TubeTriangle.h */,
+				3BCFC3DC12D8EF9600E48051 /* TubeTriangle.cpp */,
+			);
+			path = Tubes;
+			sourceTree = "<group>";
+		};
+		3BDA1B2912E61B3E00D7FBD1 /* FieldElements */ = {
+			isa = PBXGroup;
+			children = (
+				3BCFC3BF12D8EE8F00E48051 /* Tubes */,
+				3B3FE9C312E7B91200EF0C1B /* AllianceWall.h */,
+				3B3FE9C212E7B91200EF0C1B /* AllianceWall.cpp */,
+				3B3FE9C612E7B91200EF0C1B /* GuardRail.h */,
+				3B3FE9C512E7B91200EF0C1B /* GuardRail.cpp */,
+				3B3FE9C812E7B91200EF0C1B /* Lane.h */,
+				3B3FE9C712E7B91200EF0C1B /* Lane.cpp */,
+				3B3FE9CA12E7B91200EF0C1B /* LaneDivider.h */,
+				3B3FE9C912E7B91200EF0C1B /* LaneDivider.cpp */,
+				3B3FE9CC12E7B91200EF0C1B /* ScoringGrid.h */,
+				3B3FE9CB12E7B91200EF0C1B /* ScoringGrid.cpp */,
+				3B3FE9CE12E7B91200EF0C1B /* ScoringZone.h */,
+				3B3FE9CD12E7B91200EF0C1B /* ScoringZone.cpp */,
+				3B3FE9D012E7B91200EF0C1B /* Tower.h */,
+				3B3FE9CF12E7B91200EF0C1B /* Tower.cpp */,
+				3B3FE9C412E7B91200EF0C1B /* FieldElements.h */,
+			);
+			path = FieldElements;
+			sourceTree = "<group>";
+		};
+		4325121812AF6724003BD3BA /* SimulatedRobot */ = {
+			isa = PBXGroup;
+			children = (
+				43D1851712C127C90057978F /* SimModules */,
+				4391A1D412C1655D00D29119 /* SimulatedField.h */,
+				4391A1D512C1655D00D29119 /* SimulatedField.cpp */,
+				4325121A12AF6724003BD3BA /* SimulatedRobotModel.h */,
+				4325121912AF6724003BD3BA /* SimulatedRobotModel.cpp */,
+				4394BD1812FC16D1006A248B /* SimulatedXBoxController.h */,
+				4394BD1912FC16D1006A248B /* SimulatedXBoxController.cpp */,
+			);
+			name = SimulatedRobot;
+			path = ../SimulatedRobot;
+			sourceTree = SOURCE_ROOT;
+		};
+		437B07B012C3209D001925F7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3B64C0DC12EFDDC80056BD7B /* FiniteStateMachine.h */,
+				3B64C0DD12EFDDC80056BD7B /* HumanDriveControl.h */,
+				437B07B112C3209D001925F7 /* CommonIncludes.h */,
+				3B25FB1B12C3F9770058724E /* FieldModel.h */,
+				3B59C27612C469EA004DFF5D /* Matrix3x3.h */,
+				3B59C27512C469EA004DFF5D /* Matrix3x3.cpp */,
+				3B9704C612ED430D00DC10FE /* NumericalVector.hpp */,
+				3B9704C712ED430D00DC10FE /* PolyFunction.hpp */,
+				437B07B212C3209D001925F7 /* RobotModel.h */,
+				3B9704C812ED430D00DC10FE /* RobotModel.cpp */,
+				437B07B312C3209D001925F7 /* RobotProgram.h */,
+				437B07B412C3209D001925F7 /* Vector3.cpp */,
+				437B07B512C3209D001925F7 /* Vector3.h */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = SOURCE_ROOT;
+		};
+		437B07B612C3209D001925F7 /* StudentRobotProgram */ = {
+			isa = PBXGroup;
+			children = (
+				43ABB26913036BEF00D9CCB6 /* AcceleratorArcade.cpp */,
+				43ABB26A13036BEF00D9CCB6 /* AcceleratorArcade.h */,
+				4353639812FCBC8E00F9FB9F /* XBoxDriveController.cpp */,
+				4353639912FCBC8E00F9FB9F /* XBoxDriveController.h */,
+				437B07B812C3209D001925F7 /* StudentProgram.h */,
+				437B07B712C3209D001925F7 /* StudentProgram.cpp */,
+				43360B9112F497A20093065F /* RobotTuningTests.h */,
+				43360B9212F497A20093065F /* RobotTuningTests.cpp */,
+				43360B9412F498C00093065F /* PID.hpp */,
+				4315C9891306451E00F5ACC4 /* LinearizeMotorTest.h */,
+			);
+			name = StudentRobotProgram;
+			path = ../../StudentRobotProgram;
+			sourceTree = SOURCE_ROOT;
+		};
+		43AEFDB51303E467001D3BD1 /* Keaton */ = {
+			isa = PBXGroup;
+			children = (
+				43AEFDB81303E467001D3BD1 /* Keaton.cpp */,
+				43AEFDB91303E467001D3BD1 /* Keaton.h */,
+				43AEFDBA1303E467001D3BD1 /* LinearizedMotorResponse.h */,
+				43AEFDBB1303E467001D3BD1 /* MyRobot.cpp */,
+				43AEFDBD1303E467001D3BD1 /* XBoxControllerCRIODriver.cpp */,
+				43AEFDBE1303E467001D3BD1 /* XBoxControllerCRIODriver.h */,
+			);
+			name = Keaton;
+			path = ../../Keaton;
+			sourceTree = SOURCE_ROOT;
+		};
+		43B18E80127D221E007DDD3D /* SimGUI */ = {
+			isa = PBXGroup;
+			children = (
+				43AFFFF712C0C7F000B03CF9 /* SimulatedProgram.h */,
+				43AFFFF612C0C7F000B03CF9 /* SimulatedProgram.cpp */,
+				43B19024127D43FB007DDD3D /* SimulatorController.h */,
+				43B19023127D43FB007DDD3D /* SimulatorController.cpp */,
+				43B18CDA127B8EF6007DDD3D /* SimulatorWindow.h */,
+				43B18CDB127B8EF6007DDD3D /* SimulatorWindow.cpp */,
+				43B18DE8127C1FBF007DDD3D /* SimHardware.h */,
+				43B18DE9127C1FBF007DDD3D /* SimHardware.cpp */,
+			);
+			name = SimGUI;
+			path = ../SimGUI;
+			sourceTree = "<group>";
+		};
+		43D1851712C127C90057978F /* SimModules */ = {
+			isa = PBXGroup;
+			children = (
+				43D1851812C127C90057978F /* Interfaces */,
+				3B25FAD412C3F6940058724E /* SimAccelerometerModule.h */,
+				3B25FAD312C3F6940058724E /* SimAccelerometerModule.cpp */,
+				3B294DE712ECD1E7000D8E58 /* SimArmModule.h */,
+				3B294DE812ECD1E7000D8E58 /* SimArmModule.cpp */,
+				3B294DE412ECD1E3000D8E58 /* SimElevatorModule.h */,
+				3B294DE512ECD1E3000D8E58 /* SimElevatorModule.cpp */,
+				43D1851C12C127C90057978F /* SimEncoderModule.h */,
+				43D1851B12C127C90057978F /* SimEncoderModule.cpp */,
+				43D1851E12C127C90057978F /* SimGearingModule.h */,
+				43D1851D12C127C90057978F /* SimGearingModule.cpp */,
+				3B25FAD612C3F6940058724E /* SimGyroModule.h */,
+				3B25FAD512C3F6940058724E /* SimGyroModule.cpp */,
+				43D1852012C127C90057978F /* SimModuleBase.h */,
+				43D1851F12C127C90057978F /* SimModuleBase.cpp */,
+				43D1852212C127C90057978F /* SimMotorModule.h */,
+				43D1852112C127C90057978F /* SimMotorModule.cpp */,
+				3B25FAD812C3F6940058724E /* SimPotModule.h */,
+				3B25FAD712C3F6940058724E /* SimPotModule.cpp */,
+				43D1852412C127C90057978F /* SimRobotBody.h */,
+				43D1852312C127C90057978F /* SimRobotBody.cpp */,
+				43D1852612C127C90057978F /* SimWheelModule.h */,
+				43D1852512C127C90057978F /* SimWheelModule.cpp */,
+				3BB59E7012D7ADD800A8A5CD /* SimModuleIncludes.h */,
+			);
+			path = SimModules;
+			sourceTree = "<group>";
+		};
+		43D1851812C127C90057978F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				43D1851912C127C90057978F /* DistanceVectorInterface.h */,
+				43D1851A12C127C90057978F /* RotationInterface.h */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* RoboSimOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "RoboSimOSX" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoboSimOSX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = RoboSimOSX;
+			productReference = 8D1107320486CEB800E47090 /* RoboSimOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RoboSimOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* RoboSimOSX */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* RoboSimOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				43B1915E127DD58A007DDD3D /* car.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F3A2E09D0888800EBEB88 /* SDLMain.m in Sources */,
+				43B18CA0127B857A007DDD3D /* RoboSim.cpp in Sources */,
+				43B18CDC127B8EF6007DDD3D /* SimulatorWindow.cpp in Sources */,
+				43B18DEA127C1FBF007DDD3D /* SimHardware.cpp in Sources */,
+				43B19025127D43FB007DDD3D /* SimulatorController.cpp in Sources */,
+				4325121B12AF6724003BD3BA /* SimulatedRobotModel.cpp in Sources */,
+				43AFFFF812C0C7F000B03CF9 /* SimulatedProgram.cpp in Sources */,
+				43D1852712C127C90057978F /* SimEncoderModule.cpp in Sources */,
+				43D1852812C127C90057978F /* SimGearingModule.cpp in Sources */,
+				43D1852912C127C90057978F /* SimModuleBase.cpp in Sources */,
+				43D1852A12C127C90057978F /* SimMotorModule.cpp in Sources */,
+				43D1852B12C127C90057978F /* SimRobotBody.cpp in Sources */,
+				43D1852C12C127C90057978F /* SimWheelModule.cpp in Sources */,
+				4391A1D612C1655D00D29119 /* SimulatedField.cpp in Sources */,
+				437B07B912C3209D001925F7 /* Vector3.cpp in Sources */,
+				437B07BA12C3209D001925F7 /* StudentProgram.cpp in Sources */,
+				3B25FAD912C3F6940058724E /* SimAccelerometerModule.cpp in Sources */,
+				3B25FADA12C3F6940058724E /* SimGyroModule.cpp in Sources */,
+				3B25FADB12C3F6940058724E /* SimPotModule.cpp in Sources */,
+				3B59C27712C469EA004DFF5D /* Matrix3x3.cpp in Sources */,
+				3BCFC3DA12D8EF8E00E48051 /* TubeSquare.cpp in Sources */,
+				3BCFC3DD12D8EF9600E48051 /* TubeTriangle.cpp in Sources */,
+				3B87253412D8F5CE0012825F /* TubeRing.cpp in Sources */,
+				3BBD292D12D97C77007A004A /* FieldObject.cpp in Sources */,
+				3BBFCC2C12E76C220053A1E9 /* Tube.cpp in Sources */,
+				3B7AB70212E7735700962B13 /* ConvexPolygon.cpp in Sources */,
+				3B7AB70312E7735700962B13 /* ConvexPolyhedron.cpp in Sources */,
+				3B7AB70412E7735700962B13 /* Edge.cpp in Sources */,
+				3B7AB70512E7735700962B13 /* Prism.cpp in Sources */,
+				3B3FE9D112E7B91200EF0C1B /* AllianceWall.cpp in Sources */,
+				3B3FE9D212E7B91200EF0C1B /* GuardRail.cpp in Sources */,
+				3B3FE9D312E7B91200EF0C1B /* Lane.cpp in Sources */,
+				3B3FE9D412E7B91200EF0C1B /* LaneDivider.cpp in Sources */,
+				3B3FE9D512E7B91200EF0C1B /* ScoringGrid.cpp in Sources */,
+				3B3FE9D612E7B91200EF0C1B /* ScoringZone.cpp in Sources */,
+				3B3FE9D712E7B91200EF0C1B /* Tower.cpp in Sources */,
+				3B294DE612ECD1E3000D8E58 /* SimElevatorModule.cpp in Sources */,
+				3B294DE912ECD1E7000D8E58 /* SimArmModule.cpp in Sources */,
+				3B9704CA12ED430D00DC10FE /* RobotModel.cpp in Sources */,
+				43360B9312F497A20093065F /* RobotTuningTests.cpp in Sources */,
+				4394BD1A12FC16D1006A248B /* SimulatedXBoxController.cpp in Sources */,
+				4353639A12FCBC8E00F9FB9F /* XBoxDriveController.cpp in Sources */,
+				43ABB26B13036BEF00D9CCB6 /* AcceleratorArcade.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RoboSimOSX_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = RoboSimOSX;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RoboSimOSX_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = RoboSimOSX;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					./Frameworks,
+					"$(HOME)/Library/Frameworks",
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_VERSION = "";
+				"GCC_VERSION[sdk=macosx10.6][arch=x86_64]" = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					./Frameworks/SDL_image.framework/Headers,
+					./Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+					../../,
+					../,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+				"SDKROOT[arch=x86_64]" = macosx10.5;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks",
+					/Library/Frameworks,
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_VERSION = 4.0;
+				"GCC_VERSION[arch=x86_64]" = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
+					/Library/Frameworks/SDL.framework/Headers,
+					"$(HEADER_SEARCH_PATHS)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "RoboSimOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RoboSimOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

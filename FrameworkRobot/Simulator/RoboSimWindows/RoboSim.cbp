@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RoboSim" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="win32\Debug\RoboSim" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\bin" />
+				<Option object_output="win32\obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-x c++" />
+					<Add directory="..\..\" />
+					<Add directory="..\SDL\include\SDL" />
+					<Add directory="..\..\Simulator" />
+					<Add directory="..\SDL\include\GLUT" />
+				</Compiler>
+				<Linker>
+					<Add option="-lm" />
+					<Add library="..\SDL\lib\SDL_image.lib" />
+					<Add library="..\SDL\lib\libSDL.dll.a" />
+					<Add library="..\SDL\lib\libSDLmain.a" />
+					<Add library="..\SDL\lib\glut32.lib" />
+					<Add library="C:\Program Files\CodeBlocks\MinGW\lib\libopengl32.a" />
+					<Add library="C:\Program Files\CodeBlocks\MinGW\lib\libglu32.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="..\..\Shared\CommonIncludes.h" />
+		<Unit filename="..\..\Shared\FieldModel.h" />
+		<Unit filename="..\..\Shared\FiniteStateMachine.h" />
+		<Unit filename="..\..\Shared\HumanDriveControl.h" />
+		<Unit filename="..\..\Shared\Matrix3x3.cpp" />
+		<Unit filename="..\..\Shared\Matrix3x3.h" />
+		<Unit filename="..\..\Shared\NumericalVector.hpp" />
+		<Unit filename="..\..\Shared\PolyFunction.hpp" />
+		<Unit filename="..\..\Shared\RobotModel.cpp" />
+		<Unit filename="..\..\Shared\RobotModel.h" />
+		<Unit filename="..\..\Shared\RobotProgram.h" />
+		<Unit filename="..\..\Shared\Vector3.cpp" />
+		<Unit filename="..\..\Shared\Vector3.h" />
+		<Unit filename="..\FieldObject\Components\ConvexPolygon.cpp" />
+		<Unit filename="..\FieldObject\Components\ConvexPolygon.h" />
+		<Unit filename="..\FieldObject\Components\ConvexPolyhedron.cpp" />
+		<Unit filename="..\FieldObject\Components\ConvexPolyhedron.h" />
+		<Unit filename="..\FieldObject\Components\Edge.cpp" />
+		<Unit filename="..\FieldObject\Components\Edge.h" />
+		<Unit filename="..\FieldObject\Components\Prism.cpp" />
+		<Unit filename="..\FieldObject\Components\Prism.h" />
+		<Unit filename="..\FieldObject\FieldElements\AllianceWall.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\AllianceWall.h" />
+		<Unit filename="..\FieldObject\FieldElements\FieldElements.h" />
+		<Unit filename="..\FieldObject\FieldElements\GuardRail.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\GuardRail.h" />
+		<Unit filename="..\FieldObject\FieldElements\Lane.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\Lane.h" />
+		<Unit filename="..\FieldObject\FieldElements\LaneDivider.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\LaneDivider.h" />
+		<Unit filename="..\FieldObject\FieldElements\ScoringGrid.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\ScoringGrid.h" />
+		<Unit filename="..\FieldObject\FieldElements\ScoringZone.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\ScoringZone.h" />
+		<Unit filename="..\FieldObject\FieldElements\Tower.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\Tower.h" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\Tube.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\Tube.h" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\TubeRing.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\TubeRing.h" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\TubeSquare.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\TubeSquare.h" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\TubeTriangle.cpp" />
+		<Unit filename="..\FieldObject\FieldElements\Tubes\TubeTriangle.h" />
+		<Unit filename="..\FieldObject\FieldObject.cpp" />
+		<Unit filename="..\FieldObject\FieldObject.h" />
+		<Unit filename="..\RoboSim.cpp" />
+		<Unit filename="..\SimGUI\SimHardware.cpp" />
+		<Unit filename="..\SimGUI\SimHardware.h" />
+		<Unit filename="..\SimGUI\SimulatedProgram.cpp" />
+		<Unit filename="..\SimGUI\SimulatedProgram.h" />
+		<Unit filename="..\SimGUI\SimulatorController.cpp" />
+		<Unit filename="..\SimGUI\SimulatorController.h" />
+		<Unit filename="..\SimGUI\SimulatorWindow.cpp" />
+		<Unit filename="..\SimGUI\SimulatorWindow.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\Interfaces\DistanceVectorInterface.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\Interfaces\RotationInterface.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimAccelerometerModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimAccelerometerModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimArmModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimArmModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimElevatorModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimElevatorModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimEncoderModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimEncoderModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimGearingModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimGearingModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimGyroModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimGyroModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimModuleBase.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimModuleBase.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimModuleIncludes.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimMotorModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimMotorModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimPotModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimPotModule.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimRobotBody.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimRobotBody.h" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimWheelModule.cpp" />
+		<Unit filename="..\SimulatedRobot\SimModules\SimWheelModule.h" />
+		<Unit filename="..\SimulatedRobot\SimulatedField.cpp" />
+		<Unit filename="..\SimulatedRobot\SimulatedField.h" />
+		<Unit filename="..\SimulatedRobot\SimulatedRobotModel.cpp" />
+		<Unit filename="..\SimulatedRobot\SimulatedRobotModel.h" />
+		<Unit filename="..\SimulatedRobot\SimulatedXBoxController.cpp" />
+		<Unit filename="..\SimulatedRobot\SimulatedXBoxController.h" />
+		<Unit filename="..\..\StudentRobotProgram\AcceleratorArcade.cpp" />
+		<Unit filename="..\..\StudentRobotProgram\AcceleratorArcade.h" />
+		<Unit filename="..\..\StudentRobotProgram\LinearizeMotorTest.h" />
+		<Unit filename="..\..\StudentRobotProgram\PID.hpp" />
+		<Unit filename="..\..\StudentRobotProgram\RobotTuningTests.cpp" />
+		<Unit filename="..\..\StudentRobotProgram\RobotTuningTests.h" />
+		<Unit filename="..\..\StudentRobotProgram\StudentProgram.cpp" />
+		<Unit filename="..\..\StudentRobotProgram\StudentProgram.h" />
+		<Unit filename="..\..\StudentRobotProgram\XBoxDriveController.cpp" />
+		<Unit filename="..\..\StudentRobotProgram\XBoxDriveController.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
